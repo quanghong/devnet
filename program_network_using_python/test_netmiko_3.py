@@ -2,7 +2,7 @@ from netmiko import ConnectHandler
 from pprint import pprint
 from inventory.config import inv
 
-ObjFile = open('./tasks/inventory/netmiko_p3', 'r')
+ObjFile = open('./inventory/netmiko_p3', 'r')
 lines = ObjFile.readlines()
 ObjFile.close()
 pprint(lines)
