@@ -5,9 +5,8 @@ hostname SW5
 
 enable password cisco
 ip domain-name cisco.com
-crypto key gener rsa
-y
-1024
+crypto key generate rsa general-keys modulus 1024
+ip ssh version 2
 
 username cisco pri 15 secre cisco
 
