@@ -19,7 +19,11 @@ for device, info in inv.items():
     print(output)
 
     pprint(lines)
-    output = net_connect.send_config_set(lines)
+    # output = net_connect.send_config_set(lines)
+    # print(output)
+    config_commands = ['int loop 0', 'ip address 1.1.1.1 255.255.255.0']
+    pprint(config_commands)
+    output = net_connect.send_config_set(config_commands)
     print(output)
 
     output = net_connect.send_command('show vlan')
