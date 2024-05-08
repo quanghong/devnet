@@ -40,12 +40,17 @@ network:
     ethernets:
         ens160:
             dhcp4: true
+            addresses:
+                - 192.168.209.128/24
+            nameservers:
+                addresses: [192.168.209.2]
+                search: [192.168.209.2]
+            routes:
+                - to: default
+                  via: 192.168.209.2
         ens32:
             addresses:
                 - 192.168.168.100/24
-            nameservers:
-                search: [192.168.168.1]
-                addresses: [192.168.168.1]
-            routes:
-                - to: default
-                  via: 192.168.168.1
+            # routes:
+            #     - to: default
+            #       via: 192.168.168.1
