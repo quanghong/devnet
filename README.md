@@ -41,16 +41,16 @@ network:
         ens160:
             dhcp4: true
             addresses:
-                - 192.168.209.128/24
+                - 192.168.116.128/24
             nameservers:
-                addresses: [192.168.209.2]
-                search: [192.168.209.2]
+                addresses: [192.168.116.1]
+                search: [192.168.116.1]
             routes:
                 - to: default
-                  via: 192.168.209.2
+                  via: 192.168.116.1
         ens32:
             addresses:
-                - 192.168.168.100/24
+                - 192.168.20.100/24
             # routes:
             #     - to: default
-            #       via: 192.168.168.1
+            #       via: 192.168.20.254
