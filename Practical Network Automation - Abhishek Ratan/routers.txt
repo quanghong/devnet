@@ -1,0 +1,13 @@
+configure t
+hostname R1
+
+enable password cisco
+ip domain-name cisco.com
+crypto key generate rsa general-keys modulus 1024
+ip ssh version 2
+
+username cisco pri 15 secre cisco
+
+line vty 0 4
+login local
+transport input all
