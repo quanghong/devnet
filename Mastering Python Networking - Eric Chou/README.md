@@ -1,7 +1,3 @@
-# devnet
-Learning DevNet Certifications
-
-# ansible
 <!-- install -->
 activate python venv
 pip install ansible, ansible-pylibssh

@@ -2,3 +2,5 @@ netmiko
 paramiko
 python-dotenv
 pysnmp
+ansible
+ansible-pylibssh
