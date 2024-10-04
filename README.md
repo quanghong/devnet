@@ -14,3 +14,6 @@ https://docs.ansible.com/ansible/latest/collections/cisco/ios/ios_config_module.
 
 <!-- playbook loops -->
 https://docs.ansible.com/ansible/latest/playbook_guide/playbooks_loops.html
+
+<!-- playbook templating -->
+https://docs.ansible.com/ansible/latest/playbook_guide/playbooks_templating.html
