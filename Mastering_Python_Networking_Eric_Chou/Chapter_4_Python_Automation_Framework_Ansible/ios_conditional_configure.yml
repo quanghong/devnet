@@ -1,0 +1,40 @@
+---
+- name: IOS command output for when clause
+  hosts: ios-devices
+  gather_facts: false
+  tasks:
+    # show configuration before change
+    - name: show config
+      ios_command:
+        commands:
+          - show run
+      register: output
+
+    - name: show output
+      debug:
+        msg: '{{ output }}'
+
+    # configuration change
+    - name: show hostname
+      ios_command:
+        commands:
+          - show run | i hostname
+      register: output
+
+    - name: show output with when conditions
+      when: output.stdout == ["hostname R1"]
+      # when: ansible_network_os == 'ios'
+      ios_config:
+        lines:
+          - logging buffered 30000
+
+    # show configuration after change
+    - name: show logging config after change
+      ios_command:
+        commands:
+          - show run | i logging
+      register: output
+
+    - name: show output
+      debug:
+        msg: '{{ output }}'
