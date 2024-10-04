@@ -1,0 +1,40 @@
+---
+- name: Add Multiple Vlans
+  hosts: ios-switches
+  gather_facts: false
+  connection: network_cli
+  vars:
+    vlans: {
+      "100": {"description": "floor_1", "ip": "192.168.1.5"},
+      "200": {"description": "floor_2", "ip": "192.168.2.5"},
+      "300": {"description": "floor_3", "ip": "192.168.3.5"}
+    }
+  tasks:
+    - name: add vlans
+      with_dict: "{{ vlans }}"
+      ios_config:
+        lines:
+          - vlan {{ item.key }}
+    
+    - name: configure vlans
+      with_dict: "{{ vlans }}"
+      ios_config:
+        parents: interface vlan {{ item.key }}
+        lines:
+          - description {{ item.value.description }}
+          - ip address {{ item.value.ip }} 255.255.255.0
+          - no shut
+
+- name: Show vlans
+  hosts: ios-switches
+  gather_facts: false
+  tasks:
+    - name: show interface vlan
+      ios_command:
+        commands:
+          - show ip int br
+      register: output
+
+    - name: show output interface vlans
+      debug:
+        msg: '{{ output }}'

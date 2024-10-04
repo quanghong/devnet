@@ -1,7 +1,8 @@
 configure t
-hostname R1
+hostname SW2
 
 int GigabitEthernet0/0
+no switchport
 ip address
 no shutdown
 end

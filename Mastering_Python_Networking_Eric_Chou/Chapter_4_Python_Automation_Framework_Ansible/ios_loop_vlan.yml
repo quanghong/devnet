@@ -1,0 +1,39 @@
+# - name: Back Up IOS Device Configurations
+#   hosts: ios-switches
+#   gather_facts: false
+#   tasks:
+#     - name: backup
+#       ios_config:
+#         backup: yes
+
+- name: Add Multiple Vlans
+  hosts: ios-switches
+  gather_facts: false
+  connection: network_cli
+  vars:
+    vlan_numbers: [100, 200, 300]
+  tasks:
+    - name: add vlans
+      ios_config:
+        lines:
+          - vlan {{ item }}
+      loop: "{{ vlan_numbers }}"
+      register: output
+
+    - name: show output
+      debug:
+        msg: '{{ output }}'
+
+- name: Show vlans
+  hosts: ios-switches
+  gather_facts: false
+  tasks:
+    - name: show vlans
+      ios_command:
+        commands:
+          - show vlan
+      register: output
+
+    - name: show output vlans
+      debug:
+        msg: '{{ output }}'
