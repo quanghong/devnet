@@ -4,3 +4,5 @@ python-dotenv
 pysnmp
 ansible
 ansible-pylibssh
+ncclient
+requests
