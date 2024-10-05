@@ -2,9 +2,8 @@ configure t
 hostname R1
 
 int GigabitEthernet0/0
-ip address
+ip address 192.168.20.1 255.255.255.0
 no shutdown
-end
 
 enable password cisco
 ip domain-name cisco.com
