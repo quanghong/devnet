@@ -1,3 +1,5 @@
+https://github.com/PacktPublishing/Practical-Network-Automation-Second-Edition
+
 ansible-playbook -i inventory check_template.yml -c local -k
 
 python check_python.py

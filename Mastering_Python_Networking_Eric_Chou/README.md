@@ -1,3 +1,7 @@
+https://github.com/PacktPublishing/Mastering-Python-Networking-Second-Edition
+https://static.packt-cdn.com/downloads/9781803234618_ColorImages.pdf
+
+
 ansible-playbook -i hosts iso_backup_ios.yml
 
 ansible-playbook -i hosts ios_conditional.yml
