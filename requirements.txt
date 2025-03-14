@@ -6,3 +6,4 @@ ansible
 ansible-pylibssh
 ncclient
 requests
+acitoolkit

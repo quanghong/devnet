@@ -1,0 +1,384 @@
+[
+    {
+        "fvCEp": {
+            "attributes": {
+                "annotation": "",
+                "baseEpgDn": "",
+                "bdDn": "uni/tn-SEC/BD-WEB",
+                "childAction": "",
+                "contName": "",
+                "dn": "uni/tn-SEC/ap-SEC_PROD_SM/epg-WEB/cep-42: 0D:BC:C4: 00: 00",
+                "encap": "vlan-10",
+                "esgUsegDn": "",
+                "extMngdBy": "",
+                "fabricPathDn": "topology/pod-1/paths-101/pathep-[eth1/5]",
+                "hostingServer": "",
+                "id": "0",
+                "idepdn": "",
+                "lcC": "learned",
+                "lcOwn": "local",
+                "mac": "42: 0D:BC:C4: 00: 00",
+                "mcastAddr": "not-applicable",
+                "modTs": "2025-03-14T12: 11: 20.630+00: 00",
+                "monPolDn": "uni/tn-common/monepg-default",
+                "name": "42: 0D:BC:C4: 00: 00",
+                "nameAlias": "",
+                "reportingControllerName": "",
+                "status": "",
+                "uid": "0",
+                "userdom": "all",
+                "uuid": "",
+                "vmmSrc": "",
+                "vrfDn": "uni/tn-SEC/ctx-SEC_PROD_VRF"
+            },
+            "children": [
+                {
+                    "fvRsCEpToPathEp": {
+                        "attributes": {
+                            "childAction": "",
+                            "forceResolve": "yes",
+                            "lcC": "learned",
+                            "lcOwn": "local",
+                            "modTs": "2025-03-14T12: 11: 20.630+00: 00",
+                            "rType": "mo",
+                            "rn": "rscEpToPathEp-[topology/pod-1/paths-101/pathep-[eth1/5]]",
+                            "state": "formed",
+                            "stateQual": "none",
+                            "status": "",
+                            "tCl": "fabricAPathEp",
+                            "tDn": "topology/pod-1/paths-101/pathep-[eth1/5]",
+                            "tType": "mo"
+                        }
+                    }
+                },
+                {
+                    "fvRsToEpMacTag": {
+                        "attributes": {
+                            "childAction": "",
+                            "forceResolve": "yes",
+                            "lcOwn": "local",
+                            "modTs": "2025-03-14T12: 11: 20.630+00: 00",
+                            "rType": "mo",
+                            "rn": "rstoEpMacTag",
+                            "state": "missing-target",
+                            "stateQual": "none",
+                            "status": "",
+                            "tCl": "fvATp",
+                            "tDn": "uni/tn-SEC/eptags/epmactag-42: 0D:BC:C4: 00: 00-[WEB]",
+                            "tType": "mo"
+                        }
+                    }
+                },
+                {
+                    "fvIp": {
+                        "attributes": {
+                            "addr": "10.193.101.5",
+                            "annotation": "",
+                            "baseEpgDn": "",
+                            "bdDn": "uni/tn-SEC/BD-WEB",
+                            "childAction": "",
+                            "createTs": "2025-03-14T12: 11: 20.631+00: 00",
+                            "debugMACMessage": "",
+                            "esgUsegDn": "",
+                            "extMngdBy": "",
+                            "fabricPathDn": "topology/pod-1/paths-101/pathep-[eth1/5]",
+                            "flags": "",
+                            "lcOwn": "local",
+                            "modTs": "2025-03-14T12: 11: 20.630+00: 00",
+                            "monPolDn": "uni/tn-common/monepg-default",
+                            "rn": "ip-[10.193.101.5]",
+                            "status": "",
+                            "uid": "0",
+                            "userdom": "all",
+                            "vrfDn": "uni/tn-SEC/ctx-SEC_PROD_VRF"
+                        },
+                        "children": [
+                            {
+                                "fvRsToEpIpTag": {
+                                    "attributes": {
+                                        "childAction": "",
+                                        "forceResolve": "yes",
+                                        "lcOwn": "local",
+                                        "modTs": "2025-03-14T12: 11: 20.630+00: 00",
+                                        "rType": "mo",
+                                        "rn": "rstoEpIpTag",
+                                        "state": "missing-target",
+                                        "stateQual": "none",
+                                        "status": "",
+                                        "tCl": "fvEpIpTag",
+                                        "tDn": "uni/tn-SEC/eptags/epiptag-[10.193.101.5]-SEC_PROD_VRF",
+                                        "tType": "mo"
+                                    }
+                                }
+                            },
+                            {
+                                "fvReportingNode": {
+                                    "attributes": {
+                                        "childAction": "",
+                                        "createTs": "1970-01-01T00: 00: 00.000+00: 00",
+                                        "id": "101",
+                                        "lcC": "",
+                                        "lcOwn": "local",
+                                        "modTs": "2025-03-14T12: 11: 20.630+00: 00",
+                                        "rn": "node-101",
+                                        "status": ""
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "fvIp": {
+                        "attributes": {
+                            "addr": "2222: : 65: 5",
+                            "annotation": "",
+                            "baseEpgDn": "",
+                            "bdDn": "uni/tn-SEC/BD-WEB",
+                            "childAction": "",
+                            "createTs": "2025-03-14T12: 11: 20.631+00: 00",
+                            "debugMACMessage": "",
+                            "esgUsegDn": "",
+                            "extMngdBy": "",
+                            "fabricPathDn": "topology/pod-1/paths-101/pathep-[eth1/5]",
+                            "flags": "",
+                            "lcOwn": "local",
+                            "modTs": "2025-03-14T12: 11: 20.630+00: 00",
+                            "monPolDn": "uni/tn-common/monepg-default",
+                            "rn": "ip-[2222: : 65: 5]",
+                            "status": "",
+                            "uid": "0",
+                            "userdom": "all",
+                            "vrfDn": "uni/tn-SEC/ctx-SEC_PROD_VRF"
+                        },
+                        "children": [
+                            {
+                                "fvRsToEpIpTag": {
+                                    "attributes": {
+                                        "childAction": "",
+                                        "forceResolve": "yes",
+                                        "lcOwn": "local",
+                                        "modTs": "2025-03-14T12: 11: 20.630+00: 00",
+                                        "rType": "mo",
+                                        "rn": "rstoEpIpTag",
+                                        "state": "missing-target",
+                                        "stateQual": "none",
+                                        "status": "",
+                                        "tCl": "fvEpIpTag",
+                                        "tDn": "uni/tn-SEC/eptags/epiptag-[2222: : 65: 5]-SEC_PROD_VRF",
+                                        "tType": "mo"
+                                    }
+                                }
+                            },
+                            {
+                                "fvReportingNode": {
+                                    "attributes": {
+                                        "childAction": "",
+                                        "createTs": "1970-01-01T00: 00: 00.000+00: 00",
+                                        "id": "101",
+                                        "lcC": "",
+                                        "lcOwn": "local",
+                                        "modTs": "2025-03-14T12: 11: 20.630+00: 00",
+                                        "rn": "node-101",
+                                        "status": ""
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "fvCEp": {
+            "attributes": {
+                "annotation": "",
+                "baseEpgDn": "",
+                "bdDn": "uni/tn-SEC/BD-APP",
+                "childAction": "",
+                "contName": "",
+                "dn": "uni/tn-SEC/ap-SEC_PROD_SM/epg-APP/cep-43: 0D:BC:C4: 00: 00",
+                "encap": "vlan-20",
+                "esgUsegDn": "",
+                "extMngdBy": "",
+                "fabricPathDn": "topology/pod-1/paths-102/pathep-[eth1/5]",
+                "hostingServer": "",
+                "id": "0",
+                "idepdn": "",
+                "lcC": "learned",
+                "lcOwn": "local",
+                "mac": "43: 0D:BC:C4: 00: 00",
+                "mcastAddr": "not-applicable",
+                "modTs": "2025-03-14T12: 13: 23.835+00: 00",
+                "monPolDn": "uni/tn-common/monepg-default",
+                "name": "43: 0D:BC:C4: 00: 00",
+                "nameAlias": "",
+                "reportingControllerName": "",
+                "status": "",
+                "uid": "0",
+                "userdom": "all",
+                "uuid": "",
+                "vmmSrc": "",
+                "vrfDn": "uni/tn-SEC/ctx-SEC_PRE-PROD-VRF"
+            },
+            "children": [
+                {
+                    "fvRsCEpToPathEp": {
+                        "attributes": {
+                            "childAction": "",
+                            "forceResolve": "yes",
+                            "lcC": "learned",
+                            "lcOwn": "local",
+                            "modTs": "2025-03-14T12: 13: 23.835+00: 00",
+                            "rType": "mo",
+                            "rn": "rscEpToPathEp-[topology/pod-1/paths-102/pathep-[eth1/5]]",
+                            "state": "formed",
+                            "stateQual": "none",
+                            "status": "",
+                            "tCl": "fabricAPathEp",
+                            "tDn": "topology/pod-1/paths-102/pathep-[eth1/5]",
+                            "tType": "mo"
+                        }
+                    }
+                },
+                {
+                    "fvRsToEpMacTag": {
+                        "attributes": {
+                            "childAction": "",
+                            "forceResolve": "yes",
+                            "lcOwn": "local",
+                            "modTs": "2025-03-14T12: 13: 23.835+00: 00",
+                            "rType": "mo",
+                            "rn": "rstoEpMacTag",
+                            "state": "missing-target",
+                            "stateQual": "none",
+                            "status": "",
+                            "tCl": "fvATp",
+                            "tDn": "uni/tn-SEC/eptags/epmactag-43: 0D:BC:C4: 00: 00-[APP]",
+                            "tType": "mo"
+                        }
+                    }
+                },
+                {
+                    "fvIp": {
+                        "attributes": {
+                            "addr": "2222: : 66: 5",
+                            "annotation": "",
+                            "baseEpgDn": "",
+                            "bdDn": "uni/tn-SEC/BD-APP",
+                            "childAction": "",
+                            "createTs": "2025-03-14T12: 13: 23.835+00: 00",
+                            "debugMACMessage": "",
+                            "esgUsegDn": "",
+                            "extMngdBy": "",
+                            "fabricPathDn": "topology/pod-1/paths-102/pathep-[eth1/5]",
+                            "flags": "",
+                            "lcOwn": "local",
+                            "modTs": "2025-03-14T12: 13: 23.835+00: 00",
+                            "monPolDn": "uni/tn-common/monepg-default",
+                            "rn": "ip-[2222: : 66: 5]",
+                            "status": "",
+                            "uid": "0",
+                            "userdom": "all",
+                            "vrfDn": "uni/tn-SEC/ctx-SEC_PRE-PROD-VRF"
+                        },
+                        "children": [
+                            {
+                                "fvRsToEpIpTag": {
+                                    "attributes": {
+                                        "childAction": "",
+                                        "forceResolve": "yes",
+                                        "lcOwn": "local",
+                                        "modTs": "2025-03-14T12: 13: 23.835+00: 00",
+                                        "rType": "mo",
+                                        "rn": "rstoEpIpTag",
+                                        "state": "missing-target",
+                                        "stateQual": "none",
+                                        "status": "",
+                                        "tCl": "fvEpIpTag",
+                                        "tDn": "uni/tn-SEC/eptags/epiptag-[2222: : 66: 5]-SEC_PRE-PROD-VRF",
+                                        "tType": "mo"
+                                    }
+                                }
+                            },
+                            {
+                                "fvReportingNode": {
+                                    "attributes": {
+                                        "childAction": "",
+                                        "createTs": "1970-01-01T00: 00: 00.000+00: 00",
+                                        "id": "102",
+                                        "lcC": "",
+                                        "lcOwn": "local",
+                                        "modTs": "2025-03-14T12: 13: 23.835+00: 00",
+                                        "rn": "node-102",
+                                        "status": ""
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "fvIp": {
+                        "attributes": {
+                            "addr": "10.193.102.5",
+                            "annotation": "",
+                            "baseEpgDn": "",
+                            "bdDn": "uni/tn-SEC/BD-APP",
+                            "childAction": "",
+                            "createTs": "2025-03-14T12: 13: 23.835+00: 00",
+                            "debugMACMessage": "",
+                            "esgUsegDn": "",
+                            "extMngdBy": "",
+                            "fabricPathDn": "topology/pod-1/paths-102/pathep-[eth1/5]",
+                            "flags": "",
+                            "lcOwn": "local",
+                            "modTs": "2025-03-14T12: 13: 23.835+00: 00",
+                            "monPolDn": "uni/tn-common/monepg-default",
+                            "rn": "ip-[10.193.102.5]",
+                            "status": "",
+                            "uid": "0",
+                            "userdom": "all",
+                            "vrfDn": "uni/tn-SEC/ctx-SEC_PRE-PROD-VRF"
+                        },
+                        "children": [
+                            {
+                                "fvRsToEpIpTag": {
+                                    "attributes": {
+                                        "childAction": "",
+                                        "forceResolve": "yes",
+                                        "lcOwn": "local",
+                                        "modTs": "2025-03-14T12: 13: 23.835+00: 00",
+                                        "rType": "mo",
+                                        "rn": "rstoEpIpTag",
+                                        "state": "missing-target",
+                                        "stateQual": "none",
+                                        "status": "",
+                                        "tCl": "fvEpIpTag",
+                                        "tDn": "uni/tn-SEC/eptags/epiptag-[10.193.102.5]-SEC_PRE-PROD-VRF",
+                                        "tType": "mo"
+                                    }
+                                }
+                            },
+                            {
+                                "fvReportingNode": {
+                                    "attributes": {
+                                        "childAction": "",
+                                        "createTs": "1970-01-01T00: 00: 00.000+00: 00",
+                                        "id": "102",
+                                        "lcC": "",
+                                        "lcOwn": "local",
+                                        "modTs": "2025-03-14T12: 13: 23.835+00: 00",
+                                        "rn": "node-102",
+                                        "status": ""
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    }
+]
